@@ -1,0 +1,702 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D90123471BD1442E00B7E2D1 /* Love_and_Peace.png in Resources */ = {isa = PBXBuildFile; fileRef = D90123461BD1442E00B7E2D1 /* Love_and_Peace.png */; settings = {ASSET_TAGS = (); }; };
+		D90D025A1BBB033600860163 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D02591BBB033600860163 /* AppDelegate.swift */; };
+		D90D025F1BBB033600860163 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90D025D1BBB033600860163 /* Main.storyboard */; };
+		D90D02611BBB033600860163 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90D02601BBB033600860163 /* Assets.xcassets */; };
+		D90D02641BBB033600860163 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90D02621BBB033600860163 /* LaunchScreen.storyboard */; };
+		D90D026F1BBB033600860163 /* MZRadioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D026E1BBB033600860163 /* MZRadioTests.swift */; };
+		D90D027A1BBB033600860163 /* MZRadioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D02791BBB033600860163 /* MZRadioUITests.swift */; };
+		D90D02BB1BBB050300860163 /* AFSoundItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D90D028A1BBB050300860163 /* AFSoundItem.m */; settings = {ASSET_TAGS = (); }; };
+		D90D02BC1BBB050300860163 /* AFSoundPlayback.m in Sources */ = {isa = PBXBuildFile; fileRef = D90D028D1BBB050300860163 /* AFSoundPlayback.m */; settings = {ASSET_TAGS = (); }; };
+		D90D02BD1BBB050300860163 /* AFSoundQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D90D028F1BBB050300860163 /* AFSoundQueue.m */; settings = {ASSET_TAGS = (); }; };
+		D90D02BE1BBB050300860163 /* AFSoundRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = D90D02911BBB050300860163 /* AFSoundRecord.m */; settings = {ASSET_TAGS = (); }; };
+		D90D02BF1BBB050300860163 /* NSTimer+AFSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D90D02931BBB050300860163 /* NSTimer+AFSoundManager.m */; settings = {ASSET_TAGS = (); }; };
+		D97A99231BD9FD83000FAAD0 /* HttpTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A99221BD9FD83000FAAD0 /* HttpTools.swift */; settings = {ASSET_TAGS = (); }; };
+		D97A99291BDA0165000FAAD0 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A99261BDA0165000FAAD0 /* CenterViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D97A992A1BDA0165000FAAD0 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A99271BDA0165000FAAD0 /* RightViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D97A992B1BDA0165000FAAD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A99281BDA0165000FAAD0 /* ViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D97A992E1BDA0202000FAAD0 /* MZRadioImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A992D1BDA0202000FAAD0 /* MZRadioImageView.swift */; settings = {ASSET_TAGS = (); }; };
+		D97A99311BDA036F000FAAD0 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A99301BDA036E000FAAD0 /* Constant.swift */; settings = {ASSET_TAGS = (); }; };
+		D97A99331BDA08A9000FAAD0 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A99321BDA08A9000FAAD0 /* Channel.swift */; settings = {ASSET_TAGS = (); }; };
+		D9CEF2AD1BDA18F4002BA7BC /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CEF2AC1BDA18F4002BA7BC /* Song.swift */; settings = {ASSET_TAGS = (); }; };
+		E9825EF157B0CBBC1A05CCC8 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4290F9B0683602E0C42214 /* Pods.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D90D026B1BBB033600860163 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D90D024E1BBB033600860163 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D90D02551BBB033600860163;
+			remoteInfo = MZRadio;
+		};
+		D90D02761BBB033600860163 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D90D024E1BBB033600860163 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D90D02551BBB033600860163;
+			remoteInfo = MZRadio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		36203ED8240E44BE751B8C9B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D90123461BD1442E00B7E2D1 /* Love_and_Peace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Love_and_Peace.png; sourceTree = "<group>"; };
+		D90D02561BBB033600860163 /* MZRadio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MZRadio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90D02591BBB033600860163 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D90D025E1BBB033600860163 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D90D02601BBB033600860163 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D90D02631BBB033600860163 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D90D02651BBB033600860163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D90D026A1BBB033600860163 /* MZRadioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MZRadioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90D026E1BBB033600860163 /* MZRadioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZRadioTests.swift; sourceTree = "<group>"; };
+		D90D02701BBB033600860163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D90D02751BBB033600860163 /* MZRadioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MZRadioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90D02791BBB033600860163 /* MZRadioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZRadioUITests.swift; sourceTree = "<group>"; };
+		D90D027B1BBB033600860163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D90D02871BBB04F400860163 /* Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		D90D02891BBB050300860163 /* AFSoundItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSoundItem.h; sourceTree = "<group>"; };
+		D90D028A1BBB050300860163 /* AFSoundItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSoundItem.m; sourceTree = "<group>"; };
+		D90D028B1BBB050300860163 /* AFSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSoundManager.h; sourceTree = "<group>"; };
+		D90D028C1BBB050300860163 /* AFSoundPlayback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSoundPlayback.h; sourceTree = "<group>"; };
+		D90D028D1BBB050300860163 /* AFSoundPlayback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSoundPlayback.m; sourceTree = "<group>"; };
+		D90D028E1BBB050300860163 /* AFSoundQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSoundQueue.h; sourceTree = "<group>"; };
+		D90D028F1BBB050300860163 /* AFSoundQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSoundQueue.m; sourceTree = "<group>"; };
+		D90D02901BBB050300860163 /* AFSoundRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSoundRecord.h; sourceTree = "<group>"; };
+		D90D02911BBB050300860163 /* AFSoundRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSoundRecord.m; sourceTree = "<group>"; };
+		D90D02921BBB050300860163 /* NSTimer+AFSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+AFSoundManager.h"; sourceTree = "<group>"; };
+		D90D02931BBB050300860163 /* NSTimer+AFSoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+AFSoundManager.m"; sourceTree = "<group>"; };
+		D97A99221BD9FD83000FAAD0 /* HttpTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpTools.swift; sourceTree = "<group>"; };
+		D97A99261BDA0165000FAAD0 /* CenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
+		D97A99271BDA0165000FAAD0 /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
+		D97A99281BDA0165000FAAD0 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D97A992D1BDA0202000FAAD0 /* MZRadioImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MZRadioImageView.swift; sourceTree = "<group>"; };
+		D97A99301BDA036E000FAAD0 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		D97A99321BDA08A9000FAAD0 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		D9CEF2AC1BDA18F4002BA7BC /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		EE4290F9B0683602E0C42214 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F13B9A1D5383F7F23A3B61A3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D90D02531BBB033600860163 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9825EF157B0CBBC1A05CCC8 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90D02671BBB033600860163 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90D02721BBB033600860163 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29ED0D53D0A60F91D1497FEB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36203ED8240E44BE751B8C9B /* Pods.debug.xcconfig */,
+				F13B9A1D5383F7F23A3B61A3 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D2D8F84AECA751D540AA5D1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE4290F9B0683602E0C42214 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D90123481BD1443900B7E2D1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D90123461BD1442E00B7E2D1 /* Love_and_Peace.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		D90D024D1BBB033600860163 = {
+			isa = PBXGroup;
+			children = (
+				D90D02581BBB033600860163 /* MZRadio */,
+				D90D026D1BBB033600860163 /* MZRadioTests */,
+				D90D02781BBB033600860163 /* MZRadioUITests */,
+				D90D02571BBB033600860163 /* Products */,
+				29ED0D53D0A60F91D1497FEB /* Pods */,
+				D2D8F84AECA751D540AA5D1F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D90D02571BBB033600860163 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D90D02561BBB033600860163 /* MZRadio.app */,
+				D90D026A1BBB033600860163 /* MZRadioTests.xctest */,
+				D90D02751BBB033600860163 /* MZRadioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D90D02581BBB033600860163 /* MZRadio */ = {
+			isa = PBXGroup;
+			children = (
+				D90D02591BBB033600860163 /* AppDelegate.swift */,
+				D90D025D1BBB033600860163 /* Main.storyboard */,
+				D90D02621BBB033600860163 /* LaunchScreen.storyboard */,
+				D90D02601BBB033600860163 /* Assets.xcassets */,
+				D90D02651BBB033600860163 /* Info.plist */,
+				D90D02871BBB04F400860163 /* Bridge.h */,
+				D97A99251BDA0165000FAAD0 /* Controller */,
+				D97A992C1BDA01B2000FAAD0 /* View */,
+				D97A992F1BDA02C6000FAAD0 /* Model */,
+				D97A99211BD9FD6B000FAAD0 /* Utilities */,
+				D90D02881BBB050300860163 /* AFSoundManager */,
+				D90123481BD1443900B7E2D1 /* Images */,
+			);
+			path = MZRadio;
+			sourceTree = "<group>";
+		};
+		D90D026D1BBB033600860163 /* MZRadioTests */ = {
+			isa = PBXGroup;
+			children = (
+				D90D026E1BBB033600860163 /* MZRadioTests.swift */,
+				D90D02701BBB033600860163 /* Info.plist */,
+			);
+			path = MZRadioTests;
+			sourceTree = "<group>";
+		};
+		D90D02781BBB033600860163 /* MZRadioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D90D02791BBB033600860163 /* MZRadioUITests.swift */,
+				D90D027B1BBB033600860163 /* Info.plist */,
+			);
+			path = MZRadioUITests;
+			sourceTree = "<group>";
+		};
+		D90D02881BBB050300860163 /* AFSoundManager */ = {
+			isa = PBXGroup;
+			children = (
+				D90D02891BBB050300860163 /* AFSoundItem.h */,
+				D90D028A1BBB050300860163 /* AFSoundItem.m */,
+				D90D028B1BBB050300860163 /* AFSoundManager.h */,
+				D90D028C1BBB050300860163 /* AFSoundPlayback.h */,
+				D90D028D1BBB050300860163 /* AFSoundPlayback.m */,
+				D90D028E1BBB050300860163 /* AFSoundQueue.h */,
+				D90D028F1BBB050300860163 /* AFSoundQueue.m */,
+				D90D02901BBB050300860163 /* AFSoundRecord.h */,
+				D90D02911BBB050300860163 /* AFSoundRecord.m */,
+				D90D02921BBB050300860163 /* NSTimer+AFSoundManager.h */,
+				D90D02931BBB050300860163 /* NSTimer+AFSoundManager.m */,
+			);
+			path = AFSoundManager;
+			sourceTree = "<group>";
+		};
+		D97A99211BD9FD6B000FAAD0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D97A99221BD9FD83000FAAD0 /* HttpTools.swift */,
+				D97A99301BDA036E000FAAD0 /* Constant.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D97A99251BDA0165000FAAD0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D97A99261BDA0165000FAAD0 /* CenterViewController.swift */,
+				D97A99271BDA0165000FAAD0 /* RightViewController.swift */,
+				D97A99281BDA0165000FAAD0 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D97A992C1BDA01B2000FAAD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D97A992D1BDA0202000FAAD0 /* MZRadioImageView.swift */,
+			);
+			name = View;
+			path = Controller/View;
+			sourceTree = "<group>";
+		};
+		D97A992F1BDA02C6000FAAD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D97A99321BDA08A9000FAAD0 /* Channel.swift */,
+				D9CEF2AC1BDA18F4002BA7BC /* Song.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D90D02551BBB033600860163 /* MZRadio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D90D027E1BBB033600860163 /* Build configuration list for PBXNativeTarget "MZRadio" */;
+			buildPhases = (
+				E0B7DD65AF6852319B84E0E1 /* Check Pods Manifest.lock */,
+				D90D02521BBB033600860163 /* Sources */,
+				D90D02531BBB033600860163 /* Frameworks */,
+				D90D02541BBB033600860163 /* Resources */,
+				5302A4349ECCCC53DEFDA9A4 /* Embed Pods Frameworks */,
+				5FBE65076B8D250C5E71D735 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MZRadio;
+			productName = MZRadio;
+			productReference = D90D02561BBB033600860163 /* MZRadio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D90D02691BBB033600860163 /* MZRadioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D90D02811BBB033600860163 /* Build configuration list for PBXNativeTarget "MZRadioTests" */;
+			buildPhases = (
+				D90D02661BBB033600860163 /* Sources */,
+				D90D02671BBB033600860163 /* Frameworks */,
+				D90D02681BBB033600860163 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D90D026C1BBB033600860163 /* PBXTargetDependency */,
+			);
+			name = MZRadioTests;
+			productName = MZRadioTests;
+			productReference = D90D026A1BBB033600860163 /* MZRadioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D90D02741BBB033600860163 /* MZRadioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D90D02841BBB033600860163 /* Build configuration list for PBXNativeTarget "MZRadioUITests" */;
+			buildPhases = (
+				D90D02711BBB033600860163 /* Sources */,
+				D90D02721BBB033600860163 /* Frameworks */,
+				D90D02731BBB033600860163 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D90D02771BBB033600860163 /* PBXTargetDependency */,
+			);
+			name = MZRadioUITests;
+			productName = MZRadioUITests;
+			productReference = D90D02751BBB033600860163 /* MZRadioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D90D024E1BBB033600860163 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Samuel37;
+				TargetAttributes = {
+					D90D02551BBB033600860163 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					D90D02691BBB033600860163 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = D90D02551BBB033600860163;
+					};
+					D90D02741BBB033600860163 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = D90D02551BBB033600860163;
+					};
+				};
+			};
+			buildConfigurationList = D90D02511BBB033600860163 /* Build configuration list for PBXProject "MZRadio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D90D024D1BBB033600860163;
+			productRefGroup = D90D02571BBB033600860163 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D90D02551BBB033600860163 /* MZRadio */,
+				D90D02691BBB033600860163 /* MZRadioTests */,
+				D90D02741BBB033600860163 /* MZRadioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D90D02541BBB033600860163 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D90D02641BBB033600860163 /* LaunchScreen.storyboard in Resources */,
+				D90D02611BBB033600860163 /* Assets.xcassets in Resources */,
+				D90123471BD1442E00B7E2D1 /* Love_and_Peace.png in Resources */,
+				D90D025F1BBB033600860163 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90D02681BBB033600860163 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90D02731BBB033600860163 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5302A4349ECCCC53DEFDA9A4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FBE65076B8D250C5E71D735 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0B7DD65AF6852319B84E0E1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D90D02521BBB033600860163 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9CEF2AD1BDA18F4002BA7BC /* Song.swift in Sources */,
+				D90D02BF1BBB050300860163 /* NSTimer+AFSoundManager.m in Sources */,
+				D90D025A1BBB033600860163 /* AppDelegate.swift in Sources */,
+				D97A99291BDA0165000FAAD0 /* CenterViewController.swift in Sources */,
+				D97A99331BDA08A9000FAAD0 /* Channel.swift in Sources */,
+				D97A992B1BDA0165000FAAD0 /* ViewController.swift in Sources */,
+				D97A992E1BDA0202000FAAD0 /* MZRadioImageView.swift in Sources */,
+				D90D02BB1BBB050300860163 /* AFSoundItem.m in Sources */,
+				D97A99231BD9FD83000FAAD0 /* HttpTools.swift in Sources */,
+				D90D02BC1BBB050300860163 /* AFSoundPlayback.m in Sources */,
+				D97A992A1BDA0165000FAAD0 /* RightViewController.swift in Sources */,
+				D90D02BD1BBB050300860163 /* AFSoundQueue.m in Sources */,
+				D90D02BE1BBB050300860163 /* AFSoundRecord.m in Sources */,
+				D97A99311BDA036F000FAAD0 /* Constant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90D02661BBB033600860163 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D90D026F1BBB033600860163 /* MZRadioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90D02711BBB033600860163 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D90D027A1BBB033600860163 /* MZRadioUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D90D026C1BBB033600860163 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D90D02551BBB033600860163 /* MZRadio */;
+			targetProxy = D90D026B1BBB033600860163 /* PBXContainerItemProxy */;
+		};
+		D90D02771BBB033600860163 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D90D02551BBB033600860163 /* MZRadio */;
+			targetProxy = D90D02761BBB033600860163 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D90D025D1BBB033600860163 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D90D025E1BBB033600860163 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D90D02621BBB033600860163 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D90D02631BBB033600860163 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D90D027C1BBB033600860163 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D90D027D1BBB033600860163 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D90D027F1BBB033600860163 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36203ED8240E44BE751B8C9B /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MZRadio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maiziedu.com.MZRadio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/samuel37/Desktop/MZRadio/MZRadio/Bridge.h;
+			};
+			name = Debug;
+		};
+		D90D02801BBB033600860163 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F13B9A1D5383F7F23A3B61A3 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MZRadio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maiziedu.com.MZRadio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/samuel37/Desktop/MZRadio/MZRadio/Bridge.h;
+			};
+			name = Release;
+		};
+		D90D02821BBB033600860163 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MZRadioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maiziedu.com.MZRadioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MZRadio.app/MZRadio";
+			};
+			name = Debug;
+		};
+		D90D02831BBB033600860163 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MZRadioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maiziedu.com.MZRadioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MZRadio.app/MZRadio";
+			};
+			name = Release;
+		};
+		D90D02851BBB033600860163 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MZRadioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maiziedu.com.MZRadioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MZRadio;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D90D02861BBB033600860163 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MZRadioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maiziedu.com.MZRadioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MZRadio;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D90D02511BBB033600860163 /* Build configuration list for PBXProject "MZRadio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D90D027C1BBB033600860163 /* Debug */,
+				D90D027D1BBB033600860163 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D90D027E1BBB033600860163 /* Build configuration list for PBXNativeTarget "MZRadio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D90D027F1BBB033600860163 /* Debug */,
+				D90D02801BBB033600860163 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D90D02811BBB033600860163 /* Build configuration list for PBXNativeTarget "MZRadioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D90D02821BBB033600860163 /* Debug */,
+				D90D02831BBB033600860163 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D90D02841BBB033600860163 /* Build configuration list for PBXNativeTarget "MZRadioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D90D02851BBB033600860163 /* Debug */,
+				D90D02861BBB033600860163 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D90D024E1BBB033600860163 /* Project object */;
+}

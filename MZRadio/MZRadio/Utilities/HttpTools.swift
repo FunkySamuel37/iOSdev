@@ -1,0 +1,66 @@
+//
+//  HttpTools.swift
+//  MZRadio
+//
+//  Created by Samuel37 on 15/10/23.
+//  Copyright © 2015年 Samuel37. All rights reserved.
+//
+
+import UIKit
+import Alamofire
+import SwiftyJSON
+
+class HttpTool {
+    
+    class var sharedInstance: HttpTool {
+        
+        struct Static {
+            static var onceToken: dispatch_once_t = 0
+            static var instance: HttpTool? = nil
+        }
+        
+        dispatch_once(&Static.onceToken){
+            Static.instance = HttpTool()
+        }
+        
+        return Static.instance!
+    }
+    
+    private func getRequest(url: String, parameters: [String: AnyObject]?, completionHandler: ( NSData?, NSError?) -> Void){
+        Alamofire.request(.GET, NetInfo.WEB_SERVER + url, parameters: parameters, encoding: ParameterEncoding.URL).response { (_, _, data, error) -> Void in
+            completionHandler(data, error)
+        }
+    }
+    
+    
+    func getChannel(completionHandler: (channels: [Channel]) -> Void){
+        self.getRequest(NetInfo.GET_CHANNEL_INFO, parameters: nil) { (data, error) -> Void in
+            if error == nil {
+//                print(NSString(data: data as NSData!, encoding: NSUTF8StringEncoding))
+        
+                let json = JSON(data: data as NSData!)
+                let channelsJSON = json["channels"]
+                var channelsArray = [Channel]()
+                for i in 0..<channelsJSON.count {
+//                    print(i)
+                    let channel_id = channelsJSON[i]["channel_id"]
+                    let name = channelsJSON[i]["name"]
+                    let seq_id = channelsJSON[i]["seq_id"]
+                    let abbr_en = channelsJSON[i]["abbr_en"]
+                    let name_en = channelsJSON[i]["name_en"]
+                    
+                    let channel = Channel(channel_id: channel_id.intValue, name: name.string!, seq_id: seq_id.intValue, abbr_en: abbr_en.string, name_en: name_en.string)
+                    channelsArray.append(channel)
+                }
+                completionHandler(channels: channelsArray)
+            }
+        }
+    }
+    
+    func getSong(channel_id:Int, completionHandler: (song: Song) -> Void){
+        
+    }
+    
+//    func getPlaylist(channel_id:Int, completionHandler: (playList: [song]) -> Void)
+    
+}

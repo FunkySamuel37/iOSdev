@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Center View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="centerViewController" id="BYZ-38-t0r" customClass="CenterViewController" customModule="MZRadio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qpj-tZ-Nh1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cm2_play_disc" translatesAutoresizingMaskIntoConstraints="NO" id="2Ct-Hu-k7F" customClass="MZRadioImageView" customModule="MZRadio" customModuleProvider="target">
+                                <rect key="frame" x="41" y="124" width="238" height="238"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2Ct-Hu-k7F" secondAttribute="height" multiplier="1:1" id="sz3-ea-MRE"/>
+                                </constraints>
+                            </imageView>
+                            <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4oA-Sf-Fwe">
+                                <rect key="frame" x="0.0" y="528" width="320" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOX-oT-6Wm">
+                                        <rect key="frame" x="138" y="-2" width="44" height="44"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="15T-Xv-pZT"/>
+                                            <constraint firstAttribute="height" constant="44" id="ufP-4O-TgQ"/>
+                                        </constraints>
+                                        <state key="normal" image="cm2_btn_pause"/>
+                                        <connections>
+                                            <action selector="playOrPause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T0x-Wr-2Mu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="pOX-oT-6Wm" firstAttribute="centerY" secondItem="4oA-Sf-Fwe" secondAttribute="centerY" id="1zM-3U-bfS"/>
+                                    <constraint firstAttribute="height" constant="40" id="GFJ-Oc-Q6l"/>
+                                    <constraint firstItem="pOX-oT-6Wm" firstAttribute="centerX" secondItem="4oA-Sf-Fwe" secondAttribute="centerX" id="Iac-O9-onU"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfY-tX-1MN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.81995271381578949" green="0.22748253067105265" blue="0.19492188100000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="16f-sQ-9Vo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4oA-Sf-Fwe" firstAttribute="top" relation="lessThanOrEqual" secondItem="2Ct-Hu-k7F" secondAttribute="bottom" constant="200" id="0d8-kN-Hyc"/>
+                            <constraint firstAttribute="trailing" secondItem="4oA-Sf-Fwe" secondAttribute="trailing" id="Bgw-WU-xtT"/>
+                            <constraint firstItem="2Ct-Hu-k7F" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="P5c-cI-AfX"/>
+                            <constraint firstItem="2Ct-Hu-k7F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TqB-lO-epN"/>
+                            <constraint firstItem="2Ct-Hu-k7F" firstAttribute="top" secondItem="zfY-tX-1MN" secondAttribute="bottom" constant="60" id="abD-HA-3jh"/>
+                            <constraint firstAttribute="trailing" secondItem="Qpj-tZ-Nh1" secondAttribute="trailing" id="b8E-m2-PVS"/>
+                            <constraint firstItem="Qpj-tZ-Nh1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dfZ-rP-kvM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4oA-Sf-Fwe" secondAttribute="bottom" id="gcG-Kq-okc"/>
+                            <constraint firstItem="zfY-tX-1MN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jL5-2O-khb"/>
+                            <constraint firstItem="Qpj-tZ-Nh1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uF0-ww-tAz"/>
+                            <constraint firstAttribute="trailing" secondItem="zfY-tX-1MN" secondAttribute="trailing" id="umH-cZ-IsY"/>
+                            <constraint firstItem="4oA-Sf-Fwe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="v3V-AP-KYT"/>
+                            <constraint firstItem="zfY-tX-1MN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="z4e-Ow-z9l"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qpj-tZ-Nh1" secondAttribute="bottom" id="zRF-L3-R50"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="albumImageView" destination="2Ct-Hu-k7F" id="zI5-Xj-jiJ"/>
+                        <outlet property="backGroundAlbumImageView" destination="Qpj-tZ-Nh1" id="nQi-iz-0bJ"/>
+                        <outlet property="buttonPlayorPause" destination="pOX-oT-6Wm" id="Ofy-4X-ZGk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="366"/>
+        </scene>
+        <!--Right View Controller-->
+        <scene sceneID="tnn-AT-r3g">
+            <objects>
+                <viewController storyboardIdentifier="rightViewController" id="IOw-Iv-MFo" customClass="RightViewController" customModule="MZRadio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SCh-y3-Kgj"/>
+                        <viewControllerLayoutGuide type="bottom" id="jEG-zA-QRu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XRh-gg-CNS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rf5-rS-BOM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="508.26666666666665" y="366.36000000000001"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cm2_btn_pause" width="52" height="52"/>
+        <image name="cm2_play_disc" width="238" height="238"/>
+    </resources>
+</document>
