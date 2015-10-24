@@ -17,11 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
-        window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        window?.rootViewController = drawerViewController
+        NSUserDefaults.standardUserDefaults().setInteger(0, forKey: "currentChannelID")
         
-        window?.makeKeyAndVisible()
+        self.window?.rootViewController = drawerViewController
+        
+        self.window?.makeKeyAndVisible()
         
         return true
     }
@@ -62,8 +63,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func prepareDrawerViewController() -> KGDrawerViewController {
         let drawerViewController = KGDrawerViewController()
         
-        drawerViewController.centerViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("centerViewController")
-        drawerViewController.rightViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("rightViewController")
+        let centerVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("centerViewController") as! CenterViewController
+        let rightVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("rightViewController") as! RightViewController
+        
+        drawerViewController.centerViewController = centerVC
+        drawerViewController.rightViewController = rightVC
         drawerViewController.backgroundImage = UIImage(named: "sky3")
         
         _drawerViewController = drawerViewController

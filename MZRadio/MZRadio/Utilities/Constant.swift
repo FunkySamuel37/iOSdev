@@ -9,7 +9,7 @@
 import UIKit
 
 struct NetInfo {
-    static let WEB_SERVER           = "http://www.douban.com/j/"
+    static let WEB_SERVER           = "http://www.douban.fm/j/"
     static let GET_CHANNEL_INFO     = "app/radio/channels"
     static let GET_PLAYLIST         = "mine/playlist"
 }

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SDWebImage
+
 
 class CenterViewController: UIViewController {
     
@@ -22,16 +24,54 @@ class CenterViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-
-        self.setupNeedleImage()
+        
         let gesture = UISwipeGestureRecognizer(target: self, action: "toggleRightDrawer:")
         gesture.direction = .Left
         self.view.addGestureRecognizer(gesture)
         self.isRotating = true
         self.setupBackGroundImage()
         self.setupNeedleImage()
-        HttpTool.sharedInstance.getChannel { (channels) -> Void in
-//            print(channels[0].name)
+        let channel_id = NSUserDefaults.standardUserDefaults().integerForKey("currentChannelID")
+        HttpTool.sharedInstance.getSong(channel_id) { (song) -> Void in
+            AFSoundManager.sharedManager().startStreamingRemoteAudioFromURL(song.url, andBlock: { (percentage, elapsedTime, timeRemaining, error, finished) -> Void in
+                if error == nil {
+                    if finished {
+                        
+                    }else {
+                        
+                        
+                        func generateString(time:CGFloat) -> String {
+                            if !time.isNaN {
+                                let all:Int = Int(time)
+                                let m:Int = all%60
+                                let f:Int = Int(all/60)
+                                var time:String = ""
+                                //小时
+                                if f<10{
+                                    time = "0\(f):"
+                                }else{
+                                    time = "\(f):"
+                                }
+                                // 分钟
+                                if m<10{
+                                    time += "0\(m)"
+                                }else{
+                                    time += "\(m)"
+                                }
+                                return time
+                            } else {
+                                return "00:00"
+                            }
+                        }
+                    }
+                }
+            })
+        }
+        
+
+        
+        HttpTool.sharedInstance.getSong(0) { (song) -> Void in
+            print(song.title)
         }
     }
     
@@ -39,10 +79,7 @@ class CenterViewController: UIViewController {
         super.viewDidAppear(animated)
         self.albumImageView.setupFrame(self.albumImageView.frame.width, img: nil)
         self.albumImageView.startRotation()
-
-
-        
-        print("width:\(self.albumImageView.frame.width),x:\(self.albumImageView.frame.origin.x),y:\(self.albumImageView.frame.origin.y)")
+//        print("width:\(self.albumImageView.frame.width),x:\(self.albumImageView.frame.origin.x),y:\(self.albumImageView.frame.origin.y)")
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,13 +88,27 @@ class CenterViewController: UIViewController {
     }
     
     
-    func toggleRightDrawer(sender: UISwipeGestureRecognizer) {
-        if(sender.direction == .Left){
-            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-            appDelegate.toggleRightDrawer(sender, animated: true)
-        }
-    }
 
+
+    
+    
+    
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+
+}
+
+
+//MARK: - ActionFuncations
+extension CenterViewController {
     @IBAction func playOrPause(sender: AnyObject) {
         if self.isRotating {
             self.albumImageView.pauseRotate()
@@ -93,6 +144,17 @@ class CenterViewController: UIViewController {
         
     }
     
+    func toggleRightDrawer(sender: UISwipeGestureRecognizer) {
+        if(sender.direction == .Left){
+            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            appDelegate.toggleRightDrawer(sender, animated: true)
+        }
+    }
+    
+}
+
+//MARK: - ViewSetupFuncations
+extension CenterViewController {
     func setupBackGroundImage(){
         self.backGroundAlbumImageView.image = UIImage(named: "Love_and_Peace")
         
@@ -130,15 +192,4 @@ class CenterViewController: UIViewController {
         view.layer.position = position
         view.layer.anchorPoint = anchorPoint
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-
 }

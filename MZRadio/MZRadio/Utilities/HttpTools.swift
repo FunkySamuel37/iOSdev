@@ -27,7 +27,8 @@ class HttpTool {
     }
     
     private func getRequest(url: String, parameters: [String: AnyObject]?, completionHandler: ( NSData?, NSError?) -> Void){
-        Alamofire.request(.GET, NetInfo.WEB_SERVER + url, parameters: parameters, encoding: ParameterEncoding.URL).response { (_, _, data, error) -> Void in
+        Alamofire.request(.GET, NetInfo.WEB_SERVER + url, parameters: parameters, encoding: ParameterEncoding.URL).response { (req, _, data, error) -> Void in
+//            print("\(req)")
             completionHandler(data, error)
         }
     }
@@ -58,7 +59,23 @@ class HttpTool {
     }
     
     func getSong(channel_id:Int, completionHandler: (song: Song) -> Void){
-        
+        self.getRequest(NetInfo.GET_PLAYLIST, parameters: ["channel":channel_id]) { (data, error) -> Void in
+//            print(NSString(data: data as NSData!, encoding: NSUTF8StringEncoding))
+            if error == nil {
+                let json = JSON(data: data as NSData!)
+                let song = json["song"][0]
+                let picture = song["picture"].string
+                let albumtitle = song["albumtitle"].string
+                let file_ext = song["file_ext"].string
+                let title = song["title"].string
+                let url = song["url"].string
+                let artist = song["artist"].string
+                let length = song["length"].intValue
+                
+                let mySong = Song(picture: picture!, albumtitle: albumtitle!, file_ext: file_ext!, title: title!, url: url!, artist: artist!, length: length)
+                completionHandler(song: mySong)
+            }
+        }
     }
     
 //    func getPlaylist(channel_id:Int, completionHandler: (playList: [song]) -> Void)

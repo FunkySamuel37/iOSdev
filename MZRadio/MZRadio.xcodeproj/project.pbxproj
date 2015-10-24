@@ -14,19 +14,17 @@
 		D90D02641BBB033600860163 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90D02621BBB033600860163 /* LaunchScreen.storyboard */; };
 		D90D026F1BBB033600860163 /* MZRadioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D026E1BBB033600860163 /* MZRadioTests.swift */; };
 		D90D027A1BBB033600860163 /* MZRadioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D02791BBB033600860163 /* MZRadioUITests.swift */; };
-		D90D02BB1BBB050300860163 /* AFSoundItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D90D028A1BBB050300860163 /* AFSoundItem.m */; settings = {ASSET_TAGS = (); }; };
-		D90D02BC1BBB050300860163 /* AFSoundPlayback.m in Sources */ = {isa = PBXBuildFile; fileRef = D90D028D1BBB050300860163 /* AFSoundPlayback.m */; settings = {ASSET_TAGS = (); }; };
-		D90D02BD1BBB050300860163 /* AFSoundQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D90D028F1BBB050300860163 /* AFSoundQueue.m */; settings = {ASSET_TAGS = (); }; };
-		D90D02BE1BBB050300860163 /* AFSoundRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = D90D02911BBB050300860163 /* AFSoundRecord.m */; settings = {ASSET_TAGS = (); }; };
-		D90D02BF1BBB050300860163 /* NSTimer+AFSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D90D02931BBB050300860163 /* NSTimer+AFSoundManager.m */; settings = {ASSET_TAGS = (); }; };
+		D91AC3E81BDB54850028FFDE /* MusicInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91AC3E71BDB54850028FFDE /* MusicInfo.swift */; settings = {ASSET_TAGS = (); }; };
 		D97A99231BD9FD83000FAAD0 /* HttpTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A99221BD9FD83000FAAD0 /* HttpTools.swift */; settings = {ASSET_TAGS = (); }; };
 		D97A99291BDA0165000FAAD0 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A99261BDA0165000FAAD0 /* CenterViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		D97A992A1BDA0165000FAAD0 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A99271BDA0165000FAAD0 /* RightViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D97A992B1BDA0165000FAAD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A99281BDA0165000FAAD0 /* ViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D97A992E1BDA0202000FAAD0 /* MZRadioImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A992D1BDA0202000FAAD0 /* MZRadioImageView.swift */; settings = {ASSET_TAGS = (); }; };
 		D97A99311BDA036F000FAAD0 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A99301BDA036E000FAAD0 /* Constant.swift */; settings = {ASSET_TAGS = (); }; };
 		D97A99331BDA08A9000FAAD0 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A99321BDA08A9000FAAD0 /* Channel.swift */; settings = {ASSET_TAGS = (); }; };
 		D9CEF2AD1BDA18F4002BA7BC /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CEF2AC1BDA18F4002BA7BC /* Song.swift */; settings = {ASSET_TAGS = (); }; };
+		D9DED5B41BDB559000AC01E3 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DED5B31BDB559000AC01E3 /* RightViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D9DED5BD1BDB65BD00AC01E3 /* AFAudioRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DED5BA1BDB65BD00AC01E3 /* AFAudioRouter.m */; settings = {ASSET_TAGS = (); }; };
+		D9DED5BE1BDB65BD00AC01E3 /* AFSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DED5BC1BDB65BD00AC01E3 /* AFSoundManager.m */; settings = {ASSET_TAGS = (); }; };
 		E9825EF157B0CBBC1A05CCC8 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4290F9B0683602E0C42214 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,25 +61,19 @@
 		D90D02791BBB033600860163 /* MZRadioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZRadioUITests.swift; sourceTree = "<group>"; };
 		D90D027B1BBB033600860163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D90D02871BBB04F400860163 /* Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
-		D90D02891BBB050300860163 /* AFSoundItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSoundItem.h; sourceTree = "<group>"; };
-		D90D028A1BBB050300860163 /* AFSoundItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSoundItem.m; sourceTree = "<group>"; };
-		D90D028B1BBB050300860163 /* AFSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSoundManager.h; sourceTree = "<group>"; };
-		D90D028C1BBB050300860163 /* AFSoundPlayback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSoundPlayback.h; sourceTree = "<group>"; };
-		D90D028D1BBB050300860163 /* AFSoundPlayback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSoundPlayback.m; sourceTree = "<group>"; };
-		D90D028E1BBB050300860163 /* AFSoundQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSoundQueue.h; sourceTree = "<group>"; };
-		D90D028F1BBB050300860163 /* AFSoundQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSoundQueue.m; sourceTree = "<group>"; };
-		D90D02901BBB050300860163 /* AFSoundRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSoundRecord.h; sourceTree = "<group>"; };
-		D90D02911BBB050300860163 /* AFSoundRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSoundRecord.m; sourceTree = "<group>"; };
-		D90D02921BBB050300860163 /* NSTimer+AFSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+AFSoundManager.h"; sourceTree = "<group>"; };
-		D90D02931BBB050300860163 /* NSTimer+AFSoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+AFSoundManager.m"; sourceTree = "<group>"; };
+		D91AC3E71BDB54850028FFDE /* MusicInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicInfo.swift; sourceTree = "<group>"; };
 		D97A99221BD9FD83000FAAD0 /* HttpTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpTools.swift; sourceTree = "<group>"; };
 		D97A99261BDA0165000FAAD0 /* CenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
-		D97A99271BDA0165000FAAD0 /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
 		D97A99281BDA0165000FAAD0 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D97A992D1BDA0202000FAAD0 /* MZRadioImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MZRadioImageView.swift; sourceTree = "<group>"; };
 		D97A99301BDA036E000FAAD0 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		D97A99321BDA08A9000FAAD0 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		D9CEF2AC1BDA18F4002BA7BC /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		D9DED5B31BDB559000AC01E3 /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
+		D9DED5B91BDB65BD00AC01E3 /* AFAudioRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAudioRouter.h; sourceTree = "<group>"; };
+		D9DED5BA1BDB65BD00AC01E3 /* AFAudioRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAudioRouter.m; sourceTree = "<group>"; };
+		D9DED5BB1BDB65BD00AC01E3 /* AFSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSoundManager.h; sourceTree = "<group>"; };
+		D9DED5BC1BDB65BD00AC01E3 /* AFSoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSoundManager.m; sourceTree = "<group>"; };
 		EE4290F9B0683602E0C42214 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F13B9A1D5383F7F23A3B61A3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,8 +164,8 @@
 				D97A992C1BDA01B2000FAAD0 /* View */,
 				D97A992F1BDA02C6000FAAD0 /* Model */,
 				D97A99211BD9FD6B000FAAD0 /* Utilities */,
-				D90D02881BBB050300860163 /* AFSoundManager */,
 				D90123481BD1443900B7E2D1 /* Images */,
+				D9DED5B81BDB65AF00AC01E3 /* AFSoundManager */,
 			);
 			path = MZRadio;
 			sourceTree = "<group>";
@@ -196,29 +188,12 @@
 			path = MZRadioUITests;
 			sourceTree = "<group>";
 		};
-		D90D02881BBB050300860163 /* AFSoundManager */ = {
-			isa = PBXGroup;
-			children = (
-				D90D02891BBB050300860163 /* AFSoundItem.h */,
-				D90D028A1BBB050300860163 /* AFSoundItem.m */,
-				D90D028B1BBB050300860163 /* AFSoundManager.h */,
-				D90D028C1BBB050300860163 /* AFSoundPlayback.h */,
-				D90D028D1BBB050300860163 /* AFSoundPlayback.m */,
-				D90D028E1BBB050300860163 /* AFSoundQueue.h */,
-				D90D028F1BBB050300860163 /* AFSoundQueue.m */,
-				D90D02901BBB050300860163 /* AFSoundRecord.h */,
-				D90D02911BBB050300860163 /* AFSoundRecord.m */,
-				D90D02921BBB050300860163 /* NSTimer+AFSoundManager.h */,
-				D90D02931BBB050300860163 /* NSTimer+AFSoundManager.m */,
-			);
-			path = AFSoundManager;
-			sourceTree = "<group>";
-		};
 		D97A99211BD9FD6B000FAAD0 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				D97A99221BD9FD83000FAAD0 /* HttpTools.swift */,
 				D97A99301BDA036E000FAAD0 /* Constant.swift */,
+				D91AC3E71BDB54850028FFDE /* MusicInfo.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -227,7 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				D97A99261BDA0165000FAAD0 /* CenterViewController.swift */,
-				D97A99271BDA0165000FAAD0 /* RightViewController.swift */,
+				D9DED5B31BDB559000AC01E3 /* RightViewController.swift */,
 				D97A99281BDA0165000FAAD0 /* ViewController.swift */,
 			);
 			path = Controller;
@@ -249,6 +224,17 @@
 				D9CEF2AC1BDA18F4002BA7BC /* Song.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D9DED5B81BDB65AF00AC01E3 /* AFSoundManager */ = {
+			isa = PBXGroup;
+			children = (
+				D9DED5B91BDB65BD00AC01E3 /* AFAudioRouter.h */,
+				D9DED5BA1BDB65BD00AC01E3 /* AFAudioRouter.m */,
+				D9DED5BB1BDB65BD00AC01E3 /* AFSoundManager.h */,
+				D9DED5BC1BDB65BD00AC01E3 /* AFSoundManager.m */,
+			);
+			path = AFSoundManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,18 +421,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9CEF2AD1BDA18F4002BA7BC /* Song.swift in Sources */,
-				D90D02BF1BBB050300860163 /* NSTimer+AFSoundManager.m in Sources */,
+				D9DED5B41BDB559000AC01E3 /* RightViewController.swift in Sources */,
+				D9DED5BE1BDB65BD00AC01E3 /* AFSoundManager.m in Sources */,
 				D90D025A1BBB033600860163 /* AppDelegate.swift in Sources */,
 				D97A99291BDA0165000FAAD0 /* CenterViewController.swift in Sources */,
 				D97A99331BDA08A9000FAAD0 /* Channel.swift in Sources */,
+				D9DED5BD1BDB65BD00AC01E3 /* AFAudioRouter.m in Sources */,
 				D97A992B1BDA0165000FAAD0 /* ViewController.swift in Sources */,
 				D97A992E1BDA0202000FAAD0 /* MZRadioImageView.swift in Sources */,
-				D90D02BB1BBB050300860163 /* AFSoundItem.m in Sources */,
 				D97A99231BD9FD83000FAAD0 /* HttpTools.swift in Sources */,
-				D90D02BC1BBB050300860163 /* AFSoundPlayback.m in Sources */,
-				D97A992A1BDA0165000FAAD0 /* RightViewController.swift in Sources */,
-				D90D02BD1BBB050300860163 /* AFSoundQueue.m in Sources */,
-				D90D02BE1BBB050300860163 /* AFSoundRecord.m in Sources */,
+				D91AC3E81BDB54850028FFDE /* MusicInfo.swift in Sources */,
 				D97A99311BDA036F000FAAD0 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -592,7 +576,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = maiziedu.com.MZRadio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/samuel37/Desktop/MZRadio/MZRadio/Bridge.h;
+				SWIFT_OBJC_BRIDGING_HEADER = MZRadio/Bridge.h;
 			};
 			name = Debug;
 		};
@@ -605,7 +589,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = maiziedu.com.MZRadio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/samuel37/Desktop/MZRadio/MZRadio/Bridge.h;
+				SWIFT_OBJC_BRIDGING_HEADER = MZRadio/Bridge.h;
 			};
 			name = Release;
 		};
