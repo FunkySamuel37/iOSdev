@@ -8,8 +8,13 @@
 
 import UIKit
 
+protocol ChannelSelectProtocol {
+    func selectChannel(channel_id: Int)
+}
+
 class RightViewController: UITableViewController {
 
+    var delegate:ChannelSelectProtocol?
     var channelList:[Channel] = [Channel](){
         didSet{
             self.tableView.reloadData()
@@ -52,6 +57,11 @@ class RightViewController: UITableViewController {
         cell.textLabel?.text = self.channelList[indexPath.row].name
 
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        self.delegate?.selectChannel(self.channelList[indexPath.row].channel_id)
     }
 
 

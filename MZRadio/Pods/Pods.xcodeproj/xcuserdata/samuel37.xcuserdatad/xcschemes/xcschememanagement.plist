@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFSoundManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,7 +47,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>0EC00501B03D9A61DDE6CD08E31F5387</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>432ECC54282C84882B482CCB4CF227FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>46443F0A836EB5D6A4087BFC15E541B0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>51E0397BEBBE343CB9413CD3EAAD1163</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,17 +72,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BE4FEE4AABBAC625B87903DEDCD418EF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D975870570AA950469B34B9393927826</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EB2FD4E5A6DB5868D8DCB8A9030D2888</key>
+		<key>9F062FD232161A170606C14819053611</key>
 		<dict>
 			<key>primary</key>
 			<true/>

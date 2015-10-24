@@ -10,7 +10,7 @@ import UIKit
 import SDWebImage
 
 
-class CenterViewController: UIViewController {
+class CenterViewController: UIViewController, ChannelSelectProtocol {
     
     
     @IBOutlet weak var buttonPlayorPause: UIButton!
@@ -191,5 +191,15 @@ extension CenterViewController {
         
         view.layer.position = position
         view.layer.anchorPoint = anchorPoint
+    }
+}
+
+//MARK: Implement protocols
+extension CenterViewController {
+    
+    func selectChannel(channel_id: Int){
+        HttpTool.sharedInstance.getSong(channel_id) { (song) -> Void in
+            print("Changed Channel")
+        }
     }
 }

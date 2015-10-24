@@ -66,6 +66,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let centerVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("centerViewController") as! CenterViewController
         let rightVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("rightViewController") as! RightViewController
         
+        rightVC.delegate = centerVC
         drawerViewController.centerViewController = centerVC
         drawerViewController.rightViewController = rightVC
         drawerViewController.backgroundImage = UIImage(named: "sky3")
