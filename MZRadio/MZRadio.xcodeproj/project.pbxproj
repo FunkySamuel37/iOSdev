@@ -23,8 +23,6 @@
 		D97A99331BDA08A9000FAAD0 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A99321BDA08A9000FAAD0 /* Channel.swift */; settings = {ASSET_TAGS = (); }; };
 		D9CEF2AD1BDA18F4002BA7BC /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CEF2AC1BDA18F4002BA7BC /* Song.swift */; settings = {ASSET_TAGS = (); }; };
 		D9DED5B41BDB559000AC01E3 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DED5B31BDB559000AC01E3 /* RightViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		D9DED5BD1BDB65BD00AC01E3 /* AFAudioRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DED5BA1BDB65BD00AC01E3 /* AFAudioRouter.m */; settings = {ASSET_TAGS = (); }; };
-		D9DED5BE1BDB65BD00AC01E3 /* AFSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DED5BC1BDB65BD00AC01E3 /* AFSoundManager.m */; settings = {ASSET_TAGS = (); }; };
 		E9825EF157B0CBBC1A05CCC8 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4290F9B0683602E0C42214 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,10 +68,6 @@
 		D97A99321BDA08A9000FAAD0 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		D9CEF2AC1BDA18F4002BA7BC /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		D9DED5B31BDB559000AC01E3 /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
-		D9DED5B91BDB65BD00AC01E3 /* AFAudioRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAudioRouter.h; sourceTree = "<group>"; };
-		D9DED5BA1BDB65BD00AC01E3 /* AFAudioRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAudioRouter.m; sourceTree = "<group>"; };
-		D9DED5BB1BDB65BD00AC01E3 /* AFSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSoundManager.h; sourceTree = "<group>"; };
-		D9DED5BC1BDB65BD00AC01E3 /* AFSoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSoundManager.m; sourceTree = "<group>"; };
 		EE4290F9B0683602E0C42214 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F13B9A1D5383F7F23A3B61A3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,7 +159,6 @@
 				D97A992F1BDA02C6000FAAD0 /* Model */,
 				D97A99211BD9FD6B000FAAD0 /* Utilities */,
 				D90123481BD1443900B7E2D1 /* Images */,
-				D9DED5B81BDB65AF00AC01E3 /* AFSoundManager */,
 			);
 			path = MZRadio;
 			sourceTree = "<group>";
@@ -224,17 +217,6 @@
 				D9CEF2AC1BDA18F4002BA7BC /* Song.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		D9DED5B81BDB65AF00AC01E3 /* AFSoundManager */ = {
-			isa = PBXGroup;
-			children = (
-				D9DED5B91BDB65BD00AC01E3 /* AFAudioRouter.h */,
-				D9DED5BA1BDB65BD00AC01E3 /* AFAudioRouter.m */,
-				D9DED5BB1BDB65BD00AC01E3 /* AFSoundManager.h */,
-				D9DED5BC1BDB65BD00AC01E3 /* AFSoundManager.m */,
-			);
-			path = AFSoundManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,11 +404,9 @@
 			files = (
 				D9CEF2AD1BDA18F4002BA7BC /* Song.swift in Sources */,
 				D9DED5B41BDB559000AC01E3 /* RightViewController.swift in Sources */,
-				D9DED5BE1BDB65BD00AC01E3 /* AFSoundManager.m in Sources */,
 				D90D025A1BBB033600860163 /* AppDelegate.swift in Sources */,
 				D97A99291BDA0165000FAAD0 /* CenterViewController.swift in Sources */,
 				D97A99331BDA08A9000FAAD0 /* Channel.swift in Sources */,
-				D9DED5BD1BDB65BD00AC01E3 /* AFAudioRouter.m in Sources */,
 				D97A992B1BDA0165000FAAD0 /* ViewController.swift in Sources */,
 				D97A992E1BDA0202000FAAD0 /* MZRadioImageView.swift in Sources */,
 				D97A99231BD9FD83000FAAD0 /* HttpTools.swift in Sources */,

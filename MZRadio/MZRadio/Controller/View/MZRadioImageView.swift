@@ -30,7 +30,7 @@ class MZRadioImageView: UIImageView {
     }
     
     func setupFrame(width:CGFloat, img:UIImage?){
-        let albumImageWidth = width / 5 * 3
+        let albumImageWidth = width / 11 * 7
         self.albumView = UIImageView(frame: CGRect(x: (width - albumImageWidth) / 2 , y: (width - albumImageWidth) / 2, width: albumImageWidth , height: albumImageWidth))
         self.albumView.clipsToBounds = true//去掉超过边界的显示
         self.albumView.layer.cornerRadius = albumImageWidth / 2

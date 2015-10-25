@@ -8,6 +8,8 @@
 
 import UIKit
 import SDWebImage
+import AFSoundManager
+import KVNProgress
 
 
 class CenterViewController: UIViewController, ChannelSelectProtocol {
@@ -20,54 +22,29 @@ class CenterViewController: UIViewController, ChannelSelectProtocol {
     @IBOutlet weak var albumImageView: MZRadioImageView!
     @IBOutlet weak var backGroundAlbumImageView: UIImageView!
     var needleImageView:UIImageView!
+    var afPlayer:AFSoundQueue!
     
     override func viewDidLoad() {
-        
+        UIApplication.sharedApplication().statusBarHidden = true
         super.viewDidLoad()
         
         let gesture = UISwipeGestureRecognizer(target: self, action: "toggleRightDrawer:")
         gesture.direction = .Left
         self.view.addGestureRecognizer(gesture)
         self.isRotating = true
-        self.setupBackGroundImage()
+        self.setupBackGroundImage(nil)
         self.setupNeedleImage()
-        let channel_id = NSUserDefaults.standardUserDefaults().integerForKey("currentChannelID")
-        HttpTool.sharedInstance.getSong(channel_id) { (song) -> Void in
-            AFSoundManager.sharedManager().startStreamingRemoteAudioFromURL(song.url, andBlock: { (percentage, elapsedTime, timeRemaining, error, finished) -> Void in
-                if error == nil {
-                    if finished {
-                        
-                    }else {
-                        
-                        
-                        func generateString(time:CGFloat) -> String {
-                            if !time.isNaN {
-                                let all:Int = Int(time)
-                                let m:Int = all%60
-                                let f:Int = Int(all/60)
-                                var time:String = ""
-                                //小时
-                                if f<10{
-                                    time = "0\(f):"
-                                }else{
-                                    time = "\(f):"
-                                }
-                                // 分钟
-                                if m<10{
-                                    time += "0\(m)"
-                                }else{
-                                    time += "\(m)"
-                                }
-                                return time
-                            } else {
-                                return "00:00"
-                            }
-                        }
-                    }
-                }
+        HttpTool.sharedInstance.getSong(0) { (song) -> Void in
+            let item = AFSoundItem(streamingURL: NSURL(string: song.url))
+            self.afPlayer = AFSoundQueue(items: [item])
+            self.afPlayer.playCurrentItem()
+            self.afPlayer.listenFeedbackUpdatesWithBlock({ (item) -> Void in
+                 print(1)
+                }, andFinishedBlock: { (item) -> Void in
+                    print(2)
             })
+            self.changeImages(UIImage(data: NSData(contentsOfURL: NSURL(string: song.picture)!)!)!)
         }
-        
 
         
         HttpTool.sharedInstance.getSong(0) { (song) -> Void in
@@ -113,7 +90,7 @@ extension CenterViewController {
         if self.isRotating {
             self.albumImageView.pauseRotate()
             self.isRotating = false
-            
+            self.afPlayer.pause()
             
             
             //按钮的图片设置
@@ -123,7 +100,7 @@ extension CenterViewController {
             self.albumImageView.resumeRotate()
             self.isRotating = true
             
-            
+            self.afPlayer.playCurrentItem()
             //按钮的图片设置
             self.buttonPlayorPause.setImage(UIImage(named: "cm2_btn_pause"), forState: UIControlState.Normal)
             self.buttonPlayorPause.setImage(UIImage(named: "cm2_btn_pause_prs"), forState: UIControlState.Highlighted)
@@ -155,7 +132,7 @@ extension CenterViewController {
 
 //MARK: - ViewSetupFuncations
 extension CenterViewController {
-    func setupBackGroundImage(){
+    func setupBackGroundImage(url: UIImage?){
         self.backGroundAlbumImageView.image = UIImage(named: "Love_and_Peace")
         
         let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Dark)
@@ -192,6 +169,16 @@ extension CenterViewController {
         view.layer.position = position
         view.layer.anchorPoint = anchorPoint
     }
+    
+    func changeImages(image: UIImage){
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0)) { () -> Void in
+            self.albumImageView.albumView.image = image
+            self.backGroundAlbumImageView.image = image
+            
+        }
+        
+        
+    }
 }
 
 //MARK: Implement protocols
@@ -199,7 +186,16 @@ extension CenterViewController {
     
     func selectChannel(channel_id: Int){
         HttpTool.sharedInstance.getSong(channel_id) { (song) -> Void in
+//            KVNProgress.showWithStatus("Loading")
             print("Changed Channel")
+            
+            let item = AFSoundItem(streamingURL: NSURL(string: song.url))
+            self.afPlayer.addItem(item)
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), { () -> Void in
+                self.afPlayer.playNextItem()
+            })
+            self.changeImages(UIImage(data: NSData(contentsOfURL: NSURL(string: song.picture)!)!)!)
+            
         }
     }
 }

@@ -64,16 +64,20 @@ class HttpTool {
             if error == nil {
                 let json = JSON(data: data as NSData!)
                 let song = json["song"][0]
-                let picture = song["picture"].string
-                let albumtitle = song["albumtitle"].string
-                let file_ext = song["file_ext"].string
-                let title = song["title"].string
-                let url = song["url"].string
-                let artist = song["artist"].string
-                let length = song["length"].intValue
+                if song["url"].string != nil {
+                    
+                    let picture = song["picture"].string
+                    let albumtitle = song["albumtitle"].string
+                    let file_ext = song["file_ext"].string
+                    let title = song["title"].string
+                    let url = song["url"].string
+                    let artist = song["artist"].string
+                    let length = song["length"].intValue
+                    
+                    let mySong = Song(picture: picture!, albumtitle: albumtitle!, file_ext: file_ext!, title: title!, url: url!, artist: artist!, length: length)
+                    completionHandler(song: mySong)
+                }
                 
-                let mySong = Song(picture: picture!, albumtitle: albumtitle!, file_ext: file_ext!, title: title!, url: url!, artist: artist!, length: length)
-                completionHandler(song: mySong)
             }
         }
     }
