@@ -1,4 +1,4 @@
-SB
+MZRadio
 ===
 
 项目1.MZRadio
