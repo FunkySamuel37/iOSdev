@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <animations/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cm2_play_disc" translatesAutoresizingMaskIntoConstraints="NO" id="2Ct-Hu-k7F" customClass="MZRadioImageView" customModule="MZRadio" customModuleProvider="target">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cm2_play_disc" translatesAutoresizingMaskIntoConstraints="NO" id="2Ct-Hu-k7F" customClass="MZRadioImageView" customModule="MZRadio" customModuleProvider="target">
                                 <rect key="frame" x="41" y="124" width="238" height="238"/>
                                 <animations/>
                                 <constraints>
